@@ -63,7 +63,6 @@ $(function () {
       }
     });
   }
-  
 
   function btnsColorBoard() {
     let hasGuessCount = 0;
@@ -295,9 +294,9 @@ $(function () {
       lostModal.showModal();
     }
 
-    $(".rulesModal").append(
-      "<div><p><span id='scorePeek'>Score: </span>" + currentScore + "</p>"
-    );
+    // $(".rulesModal").append(
+    //   "<div><p><span id='scorePeek'>Score: </span>" + currentScore + "</p>"
+    // );
 
     $(".current span").text("Score_" + currentScore);
     return hints;

@@ -60,6 +60,8 @@ button {
   text-shadow: 0px 0px 20px #050404;
 }
 
+#closeRules,
+#openRules,
 button:hover {
   box-shadow: 0 0.4rem 1.4rem 0 #172d69b4;
   cursor: pointer;
@@ -70,6 +72,17 @@ button:hover {
   -ms-transition: transform 150ms;
   -o-transition: transform 150ms;
 }
+
+button:focus-visible {
+  outline: none;
+}
+
+
+button:focus:not(:focus-visible) {
+  outline: none;
+  /* box-shadow: 1px 1px 5px rgba(1, 1, 0, .7); */
+} 
+
 
 button[disabled]:hover {
   box-shadow: none;

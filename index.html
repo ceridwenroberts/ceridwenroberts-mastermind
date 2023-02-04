@@ -10,7 +10,6 @@
   <link rel="stylesheet" href="./styles/index.css">
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js"></script>
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.9/jquery-ui.min.js"></script>
-  <!-- ska man ha med "type"? -->
   <script src="./js/index.js"></script>
 </head>
 
@@ -71,9 +70,6 @@
   <p>Are you?</p>
   <div id="introBtns">
   <button class="btnNewGame">Play!</button>
-  <button id="openIntroRules" class="clickable">
-    Rules
-  </button>
 </div>
   </dialog>
   <dialog id="rulesModal" class="modal">
@@ -89,19 +85,8 @@
       you get one point for each empty row.<br/>
       <strong>If you do not break the code</strong><br/>and you use all of your 10 guesses without breaking the code, you loose the game.<br/>
     </p>
-    
-    <!-- <span id="gamesWon">Games won</span>
-    <span id="gamesLost">Games lost</span> -->
     <button class="button closeRules clickable" id="closeRules">Close</button>
   </dialog>
-  <!-- <dialog id="lostModal" class="modal" >
-    <span id="score">Score</span>
-    <span class="score" id="gamesWon">Games won</span>
-    <span class="score" id="gamesLost">Games lost</span>
-    <p>Nope, that's not it.<span class="resultMessage">You loose!</span> Play again?</p>
-    <button class="newGame">Yes,<br>please!</button>
-    <button class="endGameLost">No</button>
-    </dialog> -->
     <dialog id="lostModal" class="modal">
       <div id="endContainer">
         <h4>Sorry, you loose.</h4>
@@ -116,12 +101,8 @@
       <p>Play again?</p>
       <button class="btnNewGame">Yes,<br/>please!</button>
       <button class="btnEndGame">No</button>
-      <!-- <h4 id="finalScore"><span class="resultMessage"> points</span></h4>
-      <form>
-        <input type="text" name="username" id="username" placeholder="username">
-      </form>
-      <button type="submit" class="clickable" id="saveScoreBtn" onclick="saveHighScores(event)" disabled>Save</button> -->
   </dialog>
 </div>
 </body>
+
 </html>
