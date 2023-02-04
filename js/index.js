@@ -63,6 +63,7 @@ $(function () {
       }
     });
   }
+  
 
   function btnsColorBoard() {
     let hasGuessCount = 0;
